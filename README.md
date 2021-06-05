@@ -29,7 +29,7 @@ As prequisite you need to have the following installed:
 
 
 ### Clone the project
-    $ git clone
+    $ git clone https://github.com/kri-ku/car_counter.git
 
 ### Navigate to the project:
 
