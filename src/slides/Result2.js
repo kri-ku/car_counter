@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import { useStyles } from '../styles/Styles';
 import Ring from '../components/Ring';
 
-export default function Result2({ goToPrev, goToNext, settings, setSettings }) {
+export default function Result2({ goToPrev, goToNext, settings }) {
     const classes = useStyles()
     const [faster, setFaster] = useState(Math.max(settings.speed1, settings.speed2))
     const [timediff, settimediff] = useState('')
@@ -36,9 +36,6 @@ export default function Result2({ goToPrev, goToNext, settings, setSettings }) {
         return Math.max(gaso1, gaso2) - Math.min(gaso1, gaso2)
     }
 
-    /*const handleGoToHome = () => {
-        goToNext()
-    }*/
 
     return (
         <Container className={classes.root} maxWidth="sm">
@@ -48,9 +45,9 @@ export default function Result2({ goToPrev, goToNext, settings, setSettings }) {
                 <Ring title="speed" value1={settings.speed1} value2={settings.speed2}></Ring>
             </div>
 
-            <div className={classes.text} style={{ flexDirection: 'row', display: 'flex' }}>
+            <div style={{ flexDirection: 'row', display: 'flex' }}>
                 <Ring title="consumption" value1={settings.consumption1} value2={settings.consumption2}></Ring>
-                <p style={{ marginLeft: 10, marginTop: 20 }}>Gas consumption is <p className={classes.highlight}>{parseFloat(gasoDiff).toFixed(2)} litres</p> more than if you would drive slower.</p>
+                <p className={classes.text} style={{ marginLeft: 10, marginTop: 20 }}>Gas consumption is <p className={classes.highlight}>{parseFloat(gasoDiff).toFixed(2)} litres</p> more than if you would drive slower.</p>
             </div>
 
             <div className={classes.buttongroup}>

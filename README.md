@@ -43,6 +43,11 @@ App will start in the http://localhost:3000.
 
 ### Examples
 
-![kuva](src/pictures/readme/1.png)
-![kuva](src/pictures/readme/2.png)
-![kuva](src/pictures/readme/3.png)
+![kuva](src/pictures/readme/5.png)
+![kuva](src/pictures/readme/10.png)
+![kuva](src/pictures/readme/11.png)
+![kuva](src/pictures/readme/9.png)
+
+### Try it
+At the moment you can try the project at kristiinakumila.com.
+Sadly the rings showing in the last picture aren't working in the deployment version.
