@@ -1,0 +1,9 @@
+.slick-dots li.slick-active button:before {
+  color: #881798 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: 'white';
+  margin: 20;
+}
