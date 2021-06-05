@@ -70,7 +70,7 @@ function App() {
             <Result settings={settings} setSettings={setSettings} goToPrev={goToPrev} goToNext={goToNext}></Result>
           </div>
           <div>
-            <Result2 goToPrev={goToPrev} goToNext={goToNext} settings={settings}></Result2>
+            <Result2 goToPrev={goToPrev} goToNext={goToNext} settings={settings} setSettings={setSettings}></Result2>
           </div>
 
         </Slider>

@@ -34,16 +34,17 @@ const useStyles = makeStyles((theme) => ({
     },
 
     header: {
-        boxShadow: 'none',
         backgroundColor: '#28df99',
         alignItems: 'center',
         height: 150,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        
     },
     heading: {
         letterSpacing: 4,
         fontFamily: 'Abel',
         fontSize: 60,
+        color: 'white'
         
     },
     textfield: {

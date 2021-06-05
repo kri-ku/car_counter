@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import { useStyles } from '../styles/Styles';
 import Ring from '../components/Ring';
 
-export default function Result2({ goToPrev, goToNext, settings }) {
+export default function Result2({ goToPrev, goToNext, settings, setSettings }) {
     const classes = useStyles()
     const [faster, setFaster] = useState(Math.max(settings.speed1, settings.speed2))
     const [timediff, settimediff] = useState('')
@@ -35,6 +35,10 @@ export default function Result2({ goToPrev, goToNext, settings }) {
     const countGasolineDifference = (gaso1, gaso2) => {
         return Math.max(gaso1, gaso2) - Math.min(gaso1, gaso2)
     }
+
+    /*const handleGoToHome = () => {
+        goToNext()
+    }*/
 
     return (
         <Container className={classes.root} maxWidth="sm">
